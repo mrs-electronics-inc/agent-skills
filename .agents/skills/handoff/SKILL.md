@@ -1,31 +1,31 @@
 ---
 name: handoff
-description: "Extracts relevant context from current work to start a new focused task. Use when user wants to pivot to a new task while preserving important context."
+description: "Extracts relevant context from the current thread to start a new thread. Use when user wants to pivot to a new thread while preserving important context."
 ---
 
 # Handoff
 
-Transitions to a new focused task by extracting what matters from the current context.
+Transitions to a new thread by extracting what matters from the current thread.
 
 ## Guidelines
 
 ### Always Do (no asking)
 
-- Ask the user for their goal for the new task
+- Ask the user for their goal for the new thread
 - Extract files, decisions, and context relevant to that goal
-- Generate a draft prompt that summarizes relevant context and outlines the task
-- List all files that may be relevant to the new task
+- Generate a draft prompt that summarizes relevant context and outlines the new thread
+- List all files that may be relevant to the new thread
 
 ### Ask First (pause for approval)
 
-- Present the draft prompt for user review before starting the new task
+- Present the draft prompt for user review before starting the new thread
 - Confirm which files to include
 
 ### Never Do (hard stop)
 
 - Summarize the entire thread (creates lossy overview)
-- Start the new task without user confirmation of the prompt
-- Include files unrelated to the new task goal
+- Start the new thread without user confirmation of the prompt
+- Include files unrelated to the new thread goal
 
 ## Workflow
 
