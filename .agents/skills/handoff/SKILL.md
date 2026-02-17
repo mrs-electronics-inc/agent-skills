@@ -1,0 +1,67 @@
+---
+name: handoff
+description: "Extracts relevant context from current work to start a new focused task. Use when user wants to pivot to a new task while preserving important context."
+---
+
+# Handoff
+
+Transitions to a new focused task by extracting what matters from the current context.
+
+## Guidelines
+
+### Always Do (no asking)
+
+- Ask the user for their goal for the new task
+- Extract files, decisions, and context relevant to that goal
+- Generate a draft prompt that summarizes relevant context and outlines the task
+- List all files that may be relevant to the new task
+
+### Ask First (pause for approval)
+
+- Present the draft prompt for user review before starting the new task
+- Confirm which files to include
+
+### Never Do (hard stop)
+
+- Summarize the entire thread (creates lossy overview)
+- Start the new task without user confirmation of the prompt
+- Include files unrelated to the new task goal
+
+## Workflow
+
+### Get Goal
+
+Ask the user: "What would you like to work on next?"
+
+Examples:
+
+- "implement this for teams as well, not just individual users"
+- "execute phase one of the created plan"
+- "find other places in the codebase that need this fix"
+
+### Extract Context
+
+Review the current context and extract:
+
+- Relevant files that the new task depends on
+- Key decisions or design choices made
+- Any partial work or in-progress changes
+- Configuration or setup details relevant to the new task
+
+### Generate Draft Prompt
+
+Create a draft prompt that includes:
+
+- Brief context summary (what has been done, current state)
+- Specific task goal
+- Key files and their relevance
+- Any constraints or requirements mentioned
+
+Present this draft to the user for review and editing.
+
+### Confirm and Handoff
+
+Once the user approves the prompt:
+
+- Confirm which files to carry forward
+- The user can then start a new thread with the approved prompt
