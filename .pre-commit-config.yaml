@@ -15,4 +15,3 @@ repos:
         entry: prettier --write
         language: system
         types: [markdown]
-
