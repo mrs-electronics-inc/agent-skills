@@ -12,6 +12,7 @@ Updates agent long-term memory with learnings and mistakes.
 ### Always Do (no asking)
 
 - Extract mistakes and learnings from the conversation
+- Focus on high-level mistakes that warrant long-term documentation (patterns, documentation gaps, repeated issues), not one-off errors
 - Present a refined list to the user for review
 - Use markdown subsection headers to divide sections
 - Prefer nested bullet lists over paragraphs
