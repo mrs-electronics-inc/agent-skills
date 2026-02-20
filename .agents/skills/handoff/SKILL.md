@@ -15,6 +15,7 @@ Transitions to a new thread by extracting what matters from the current thread.
 - Extract files, decisions, and context relevant to that goal
 - Generate a draft prompt that summarizes relevant context and outlines the new thread
 - List all files that may be relevant to the new thread
+- After user approval, copy the prompt to clipboard automatically
 
 ### Ask First (pause for approval)
 
@@ -26,6 +27,8 @@ Transitions to a new thread by extracting what matters from the current thread.
 - Summarize the entire thread (creates lossy overview)
 - Start the new thread without user confirmation of the prompt
 - Include files unrelated to the new thread goal
+- **Investigate or read files yourself** — the next thread does the investigation; handoff only extracts what's already known
+- Trial-and-error with clipboard commands — use the script path provided below
 
 ## Workflow
 
@@ -41,12 +44,14 @@ Examples:
 
 ### Extract Context
 
-Review the current context and extract:
+From what's already discussed in the current thread, extract:
 
 - Relevant files that the new task depends on
 - Key decisions or design choices made
 - Any partial work or in-progress changes
 - Configuration or setup details relevant to the new task
+
+**Do NOT read additional files** — use only context already in the conversation. If the user has already explained the problem (e.g., "wrong endpoint", "404 error"), include that directly. Investigation is the next thread's job.
 
 ### Generate Draft Prompt
 
@@ -63,5 +68,8 @@ Present this draft to the user for review and editing.
 
 Once the user approves the prompt:
 
-- Confirm which files to carry forward
-- The user can then start a new thread with the approved prompt
+- Copy the prompt to clipboard using the script `.agents/skills/handoff/scripts/copy-to-clipboard.sh`
+  ```bash
+  .agents/skills/handoff/scripts/copy-to-clipboard.sh "prompt text here"
+  ```
+- The user can then start a new thread with the approved prompt (already in clipboard)
