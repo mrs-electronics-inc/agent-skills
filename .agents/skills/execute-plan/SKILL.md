@@ -1,6 +1,6 @@
 ---
 name: execute-plan
-description: "Executes a PLAN.md end to end: clarify, revise the plan, implement as small commits, and push often for human review. Use when the operator asks to execute, implement, or work through a plan."
+description: "Executes a PLAN.md end to end: clarify, revise the plan, implement as small commits, and push often for operator review. Use when the operator asks to execute, implement, or work through a plan."
 license: MIT
 metadata:
   source: https://github.com/mrs-electronics-inc/agent-skills
@@ -22,7 +22,7 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 - Use Conventional Commits for all commits, with a scoped type when it adds clarity.
 - Match the target project's existing conventions (apps/packages touched, naming, patterns, public APIs) by reading its `AGENTS.md` and neighboring code.
 - Cover new or changed behavior with tests in the same commit as the behavior.
-- Push the branch often so the human can review in the draft PR.
+- Push the branch often so the operator can review in the draft PR.
 
 ### Ask First (pause for approval)
 
@@ -35,7 +35,7 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 
 - Run linters, formatters, or other repo-wide checks directly. Pre-commit hooks handle these.
 - Run tests directly. CI/CD pipelines run them.
-- Create the draft PR. The human opens it.
+- Create the draft PR. The operator opens it.
 - Amend commits after hooks fail. Create a fresh commit.
 - Mix unrelated cleanup into a feature commit.
 - Hand-edit generated files when the source can be regenerated.
@@ -66,8 +66,8 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 - Slice the work into the smallest logical commits that each leave the tree in a coherent state.
 - Order commits so each one builds on the previous; avoid broken intermediate states on shared branches.
 - Use the project's build/codegen tooling (e.g. `moon`, build-runner, schema generation) when the affected files require it.
-- Keep moving forward on implementation. Do not pause to wait for user input.
-- If the user redirects, follow their feedback over the plan — this is a collaborative process and user feedback trumps the plan.
+- Keep moving forward on implementation. Do not pause to wait for operator input.
+- If the operator redirects, follow their feedback over the plan — this is a collaborative process and operator feedback trumps the plan.
 
 ### 5. Push Often
 
@@ -89,5 +89,5 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 
 ## Completion Checklist
 
-- Branch is the implemented form of the plan (plus any revisions made based on user feedback) — nothing more, nothing less.
-- Branch is pushed and the human has been told it is ready for PR review.
+- Branch is the implemented form of the plan (plus any revisions made based on operator feedback) — nothing more, nothing less.
+- Branch is pushed and the operator has been told it is ready for PR review.
