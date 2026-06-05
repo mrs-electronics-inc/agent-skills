@@ -2,6 +2,8 @@
 name: execute-plan
 description: "Executes a PLAN.md end to end: clarify, revise the plan, implement as small commits, and push often for human review. Use when the operator asks to execute, implement, or work through a plan."
 license: MIT
+metadata:
+  source: https://github.com/mrs-electronics-inc/agent-skills
 ---
 
 # Execute Plan
