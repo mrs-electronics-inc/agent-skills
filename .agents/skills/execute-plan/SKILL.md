@@ -66,6 +66,8 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 - Slice the work into the smallest logical commits that each leave the tree in a coherent state.
 - Order commits so each one builds on the previous; avoid broken intermediate states on shared branches.
 - Use the project's build/codegen tooling (e.g. `moon`, build-runner, schema generation) when the affected files require it.
+- Keep moving forward on implementation. Do not pause to wait for user input.
+- If the user redirects, follow their feedback over the plan — this is a collaborative process and user feedback trumps the plan.
 
 ### 5. Push Often
 
