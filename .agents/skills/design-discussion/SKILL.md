@@ -1,6 +1,8 @@
 ---
 name: design-discussion
 description: "Facilitates structured design discussions through conversational, paced dialogue. Use when brainstorming design decisions, exploring architecture options, or collaborating with users on technical direction."
+metadata:
+  source: https://github.com/mrs-electronics-inc/agent-skills
 ---
 
 # Design Discussion

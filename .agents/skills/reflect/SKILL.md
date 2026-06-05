@@ -1,6 +1,8 @@
 ---
 name: reflect
 description: "Updates agent long-term memory in AGENTS.md and relevant skills with learnings and mistakes from conversations. Use when asked to reflect on a conversation or update memory."
+metadata:
+  source: https://github.com/mrs-electronics-inc/agent-skills
 ---
 
 # Reflect

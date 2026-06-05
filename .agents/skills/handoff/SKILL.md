@@ -1,6 +1,8 @@
 ---
 name: handoff
 description: "Extracts relevant context from the current thread to start a new thread. Use when user wants to pivot to a new thread while preserving important context."
+metadata:
+  source: https://github.com/mrs-electronics-inc/agent-skills
 ---
 
 # Handoff
