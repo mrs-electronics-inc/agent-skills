@@ -87,5 +87,5 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 
 ## Completion Checklist
 
-- `PLAN.md` reflects the final, agreed approach.
+- Branch is the implemented form of the plan (plus any revisions made based on user feedback) — nothing more, nothing less.
 - Branch is pushed and the human has been told it is ready for PR review.
