@@ -79,8 +79,13 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 - Flag anything that deviated from the plan and why.
 - Note follow-ups, deferred items, or open questions for the operator.
 
+### 7. Clean Up
+
+- Remove `PLAN.md` from the working tree. It is a temporary artifact of this work, not a permanent file.
+- Commit the removal (e.g. `chore: remove plan`).
+- Push the cleanup commit to the same branch.
+
 ## Completion Checklist
 
 - `PLAN.md` reflects the final, agreed approach.
 - Branch is pushed and the human has been told it is ready for PR review.
-- All Never Do rules were respected (no direct lint/test runs, no draft PR opened, no amended commits).
