@@ -15,7 +15,7 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 ### Always Do (no asking)
 
 - Verify `PLAN.md` exists at the repo root and read it. If it is missing, stop and ask the operator — do not create it from scratch.
-- Treat `PLAN.md` as the source of truth; rewrite it when reality differs.
+- Treat `PLAN.md` as the source of truth.
 - Ask focused clarifying questions when the plan is ambiguous, under-specified, or contradicts existing code or conventions. One question per turn when possible.
 - Revise `PLAN.md` to reflect new decisions, then commit it as `docs: revise plan` (or `docs(<scope>): revise plan`) before any implementation commits.
 - Break implementation into small, scoped commits — one logical change each.
@@ -28,6 +28,7 @@ Drives a `PLAN.md` from revision to an implemented, reviewable branch.
 
 - Decisions that expand scope, change public APIs, or touch hardware/infra.
 - Re-architecting parts of the plan vs. executing it as written.
+- Rewriting `PLAN.md` to diverge from the agreed plan when code reality differs.
 - Merging, rebasing against the base branch, or any history rewriting.
 
 ### Never Do (hard stop)
