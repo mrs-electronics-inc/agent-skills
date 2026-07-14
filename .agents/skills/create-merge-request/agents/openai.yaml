@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Merge Request"
+  short_description: "Create consistent MRS GitLab merge requests"
+  default_prompt: "Use $create-merge-request to create a GitLab merge request for my already-pushed branch."
